@@ -1,0 +1,2 @@
+org.springframework.test.context.ContextCustomizerFactory = com.tobeto.\
+    project_tracking.config.SqlTestContainersSpringContextCustomizerFactory

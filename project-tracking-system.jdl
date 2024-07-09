@@ -1,0 +1,42 @@
+application {
+  config {
+    baseName ProjectTrackingSystem
+    applicationType monolith
+    packageName com.example.projecttrackingsystem
+    authenticationType jwt
+    databaseType sql
+    devDatabaseType h2Disk
+    prodDatabaseType postgresql
+    buildTool maven
+  }
+  entities Project, Task
+}
+
+entity Project {
+  name String required
+  startDate LocalDate required
+  endDate LocalDate required
+}
+
+entity Task {
+  title String required
+  description String
+  creationDate ZonedDateTime required
+  status TaskStatus required
+}
+
+enum TaskStatus {
+  NEW,
+  IN_PROGRESS,
+  COMPLETED
+}
+
+relationship ManyToOne {
+  Task{project(name)} to Project
+}
+
+paginate Task with infinite-scroll
+
+service all with serviceImpl
+
+dto * with mapstruct
