@@ -15,7 +15,7 @@
 
 spring:
   application:
-    name: projectTracking
+    name: ProjectTracking
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: test
@@ -61,7 +61,7 @@ jhipster:
   clientApp:
     name: 'projectTrackingApp'
   mail:
-    from: projectTracking@localhost.com
+    from: ProjectTracking@localhost.com
     base-url: http://127.0.0.1:8080
   logging:
     # To test json console appender
@@ -75,7 +75,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: YjU1M2RkMWM4NWQyM2ZmNDFhMTQ0NWJjNzg2OTZkMmIwZTAwODdmZWYzMDVkM2FmNDkwNDU2ZjZhYTY0NDU1OGNhNzViZjczMmI2ZjZmZDFjZWEzMzNmYTgyMjA0ZGE0Yzc4OGI2NDA3ZGM0NDhkNmU1MTcxNDkyOWMwNTFlODI=
+        base64-secret: YmEzZjRkYTY3NGM4NGM2ZWRmZGIwMmNjYTg2MDg3ZWM3YjgyYTllYTk1MzI3OTRiNDMwMzhiMWQyNzU3Njc2YTY0YjUyNTA5ODBhNmU0NjljMDk4NmQ2YzYzODY0NDEyM2U4MjZhNjg2YjYyYzJjNmE5OWEwNDFkZDMyMWQ0MmY=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 86400

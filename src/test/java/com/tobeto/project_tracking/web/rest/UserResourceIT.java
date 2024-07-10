@@ -43,7 +43,10 @@ class UserResourceIT {
 
     private static final Long DEFAULT_ID = 1L;
 
+    @SuppressWarnings("unused")
     private static final String DEFAULT_PASSWORD = "passjohndoe";
+
+    @SuppressWarnings("unused")
     private static final String UPDATED_PASSWORD = "passjhipster";
 
     private static final String DEFAULT_EMAIL = "johndoe@localhost";

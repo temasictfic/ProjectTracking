@@ -32,6 +32,7 @@ import org.springframework.transaction.annotation.Transactional;
 @IntegrationTest
 class PublicUserResourceIT {
 
+    @SuppressWarnings("unused")
     private static final String DEFAULT_LOGIN = "johndoe";
 
     @Autowired

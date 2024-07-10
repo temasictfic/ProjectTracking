@@ -1,8 +1,8 @@
 application {
   config {
-    baseName ProjectTrackingSystem
+    baseName ProjectTracking
     applicationType monolith
-    packageName com.example.projecttrackingsystem
+    packageName com.tobeto.project_tracking
     authenticationType jwt
     databaseType sql
     devDatabaseType h2Disk
@@ -40,3 +40,4 @@ paginate Task with infinite-scroll
 service all with serviceImpl
 
 dto * with mapstruct
+

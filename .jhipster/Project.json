@@ -1,0 +1,28 @@
+{
+  "annotations": {
+    "changelogDate": "20240709233835"
+  },
+  "applications": ["ProjectTracking"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Project",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

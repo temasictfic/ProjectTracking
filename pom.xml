@@ -850,8 +850,8 @@
                 <profile.test>testdev</profile.test>
                 <liquibase-plugin.hibernate-dialect>org.hibernate.dialect.H2Dialect</liquibase-plugin.hibernate-dialect>
                 <liquibase-plugin.driver>org.h2.Driver</liquibase-plugin.driver>
-                <liquibase-plugin.url>jdbc:h2:file:${project.build.directory}/h2db/db/projectTracking</liquibase-plugin.url>
-                <liquibase-plugin.username>projectTracking</liquibase-plugin.username>
+                <liquibase-plugin.url>jdbc:h2:file:${project.build.directory}/h2db/db/ProjectTracking</liquibase-plugin.url>
+                <liquibase-plugin.username>ProjectTracking</liquibase-plugin.username>
                 <liquibase-plugin.password/>
             </properties>
             <dependencies>
@@ -1015,8 +1015,8 @@
                 <profile.test>testprod</profile.test>
                 <liquibase-plugin.hibernate-dialect>org.hibernate.dialect.PostgreSQLDialect</liquibase-plugin.hibernate-dialect>
                 <liquibase-plugin.driver>org.postgresql.Driver</liquibase-plugin.driver>
-                <liquibase-plugin.url>jdbc:postgresql://localhost:5432/projectTracking</liquibase-plugin.url>
-                <liquibase-plugin.username>projectTracking</liquibase-plugin.username>
+                <liquibase-plugin.url>jdbc:postgresql://localhost:5432/ProjectTracking</liquibase-plugin.url>
+                <liquibase-plugin.username>ProjectTracking</liquibase-plugin.username>
                 <liquibase-plugin.password/>
             </properties>
             <build>

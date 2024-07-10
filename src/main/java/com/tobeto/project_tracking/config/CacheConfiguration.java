@@ -50,6 +50,8 @@ public class CacheConfiguration {
             createCache(cm, com.tobeto.project_tracking.domain.User.class.getName());
             createCache(cm, com.tobeto.project_tracking.domain.Authority.class.getName());
             createCache(cm, com.tobeto.project_tracking.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.tobeto.project_tracking.domain.Project.class.getName());
+            createCache(cm, com.tobeto.project_tracking.domain.Task.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -20,11 +20,12 @@ public class PostgreSqlTestContainer implements SqlTestContainer {
         }
     }
 
+    @SuppressWarnings("resource")
     @Override
     public void afterPropertiesSet() {
         if (null == postgreSQLContainer) {
             postgreSQLContainer = new PostgreSQLContainer<>("postgres:16.3")
-                .withDatabaseName("projectTracking")
+                .withDatabaseName("ProjectTracking")
                 .withTmpFs(Collections.singletonMap("/testtmpfs", "rw"))
                 .withLogConsumer(new Slf4jLogConsumer(log))
                 .withReuse(true);
